@@ -1,10 +1,2 @@
 #!/bin/bash
-count=0
-IFS=':'
-for dir in $PATH; do
-    if [ -n "$dir" ]; then
-        count=$((count + 1))
-    fi
-done
-
-echo "$count"
+echo "$PATH" | tr -s ':' '\n' | grep -c .
